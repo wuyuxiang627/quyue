@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="57dp"
+        android:orientation="vertical">
+
+
+        <RadioGroup
+            android:id="@+id/rg_type_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginEnd="190dp"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn_underway"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="left|center_vertical"
+                android:text="进行中"
+                android:textSize="@dimen/text_size_15" />
+
+            <RadioButton
+                android:id="@+id/rbtn_finished"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="left|center_vertical"
+                android:text="已结束"
+                android:textSize="@dimen/text_size_15" />
+
+        </RadioGroup>
+
+        <com.gm.views.ForbidenScrollViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_publish"
+        style="@style/Common.button.normal.style"
+        android:layout_marginBottom="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:text="发布挑战赛" />
+
+
+</RelativeLayout>

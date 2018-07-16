@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="162dp" />
+
+
+    <TextView
+        android:id="@+id/tv_shili"
+        android:layout_width="68dp"
+        android:layout_height="22dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_black"
+        android:gravity="center"
+        android:text="示例"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+</FrameLayout>

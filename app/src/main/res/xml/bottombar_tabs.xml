@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <!--<tab-->
+        <!--icon="@drawable/selector_ic_home"-->
+        <!--id="@+id/tabs_home"-->
+        <!--title="@string/tabs_home" />-->
+    <!--<tab-->
+        <!--icon="@drawable/selector_ic_shopping_trolley"-->
+        <!--id="@+id/tabs_shopping_trolley"-->
+        <!--title="@string/tabs_shopping_trolley" />-->
+    <!--<tab-->
+        <!--icon="@drawable/selector_ic_orders"-->
+        <!--id="@+id/tabs_orders"-->
+        <!--title="@string/tabs_orders" />-->
+    <!--<tab-->
+        <!--icon="@drawable/selector_ic_my"-->
+        <!--id="@+id/tabs_my"-->
+        <!--title="@string/tabs_my" />-->
+</tabs>

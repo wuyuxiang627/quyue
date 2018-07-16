@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="@string/string_payment_balance"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:id="@+id/tv_money_iocn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="bottom"
+                    android:text="￥"
+                    android:textColor="@color/color_gray_333333"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_payment_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_toRightOf="@+id/tv_money_iocn"
+                    android:text="3432140"
+                    android:textColor="@color/color_gray_333333"
+                    android:textSize="27sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/color_gray_E8E8E8" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="71dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/color_gray_333333"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:text="@string/string_balance_payment"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/color_gray_999999"
+                    android:gravity="center"
+                    android:text="（当前可用22140）"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/view_back"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="71dp">
+
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/weixin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/color_gray_333333"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:text="@string/string_wechat_payment"
+                    android:paddingLeft="8dp"/>
+
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_money_wechat_xuanzhong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/xuanzhong"/>
+
+                    <TextView
+                        android:id="@+id/tv_money_wechat_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/iv_money_wechat_xuanzhong"
+                        android:gravity="center_vertical"
+                        android:text="需另支付77860"
+                        android:layout_marginRight="12dp"
+                        android:textColor="@color/red"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:background="@color/view_back"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="71dp">
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/zhifubao"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/color_gray_333333"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:text="@string/string_alipay_payment"
+                    android:paddingLeft="8dp"/>
+
+                <RelativeLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_money_alipay_xuanzhong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/xuanzhong"/>
+
+                    <TextView
+                        android:id="@+id/tv_money_alipay_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/iv_money_alipay_xuanzhong"
+                        android:gravity="center_vertical"
+                        android:text="需另支付77860"
+                        android:layout_marginRight="12dp"
+                        android:textColor="@color/red"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <ImageButton
+                android:id="@+id/ib_payment_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_paymen_ok"
+                android:background="@null"
+                android:layout_margin="52dp"
+                android:layout_gravity="center_horizontal"
+                />
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

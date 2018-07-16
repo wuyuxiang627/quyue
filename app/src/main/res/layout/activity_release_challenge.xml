@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/include_title_bar" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/view_back"/>
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_release_challenge_logo"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/icon_me_avatar"/>
+
+            <!--<de.hdodenhof.circleimageview.CircleImageView-->
+                <!--android:id="@+id/circle_iv_edit_avatar"-->
+                <!--android:layout_width="68dp"-->
+                <!--android:layout_height="68dp"-->
+                <!--android:layout_marginTop="18dp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:src="@drawable/icon_me_avatar"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintTop_toBottomOf="@+id/view_edit_view"-->
+                <!--/>-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_gray_333333"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="@string/string_release_lolo"/>
+
+
+
+            <TextView
+                android:id="@+id/tv_release_challeng_text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/color_gray_333333"
+                android:text="@string/string_challenge_text"/>
+
+            <EditText
+                android:id="@+id/et_release_challenge_text"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:background="@drawable/back_edit_no_solid"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:layout_margin="9dp"
+                android:textColor="@color/color_010101"
+                android:textSize="12sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+
+                android:maxLength="20"/>
+
+            <TextView
+                android:id="@+id/tv_release_challeng_money"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/color_gray_333333"
+                android:text="@string/string_challenge_money"/>
+
+            <EditText
+                android:id="@+id/et_release_challenge_money"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:background="@drawable/back_edit_no_solid"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:layout_margin="9dp"
+                android:textColor="@color/color_010101"
+                android:textSize="12sp"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:maxLength="10"/>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/color_gray_333333"
+                android:text="@string/string_challenge_time"/>
+
+            <RelativeLayout
+                android:layout_margin="9dp"
+                android:layout_width="match_parent"
+                android:layout_height="37dp">
+
+                <TextView
+                    android:id="@+id/tv_release_challenge_start_time"
+                    android:layout_width="123dp"
+                    android:layout_height="match_parent"
+                    android:text="2018-01-01"
+                    android:gravity="center"/>
+                
+                <View
+                    android:id="@+id/view_challenge"
+                    android:layout_width="10dp"
+                    android:layout_height="2dp"
+                    android:layout_toRightOf="@+id/tv_release_challenge_start_time"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:background="#c2c2c2"/>
+                
+                <TextView
+                    android:id="@+id/tv_release_challenge_end_time"
+                    android:layout_toRightOf="@+id/view_challenge"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="123dp"
+                    android:layout_height="match_parent"
+                    android:text="2018-01-01"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_release_challenge_time"
+                    android:layout_marginRight="15dp"
+                    />
+
+
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/color_gray_333333"
+                android:text="@string/string_challenge_share"/>
+            <EditText
+                android:id="@+id/et_release_challenge_share"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:background="@drawable/back_edit_no_solid"
+                android:textCursorDrawable="@drawable/edit_cursor_color"
+                android:layout_margin="9dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:hint="例：领取阿迪商城优惠券"
+                android:textColor="@color/color_010101"
+                android:textSize="12sp"
+                android:maxLength="20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="11dp"
+                android:text="@string/string_challenge_add_text"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="60dp">
+
+                <ImageButton
+                    android:id="@+id/ib_release_challenge_preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginRight="14dp"
+                    android:src="@drawable/icon_release_challenge_preview"/>
+                <ImageButton
+                    android:id="@+id/ib_realse_challenge_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginLeft="14dp"
+                    android:src="@drawable/icon_release_challenge_start"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

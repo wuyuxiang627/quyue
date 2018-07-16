@@ -1,0 +1,175 @@
+<resources>
+    <string name="app_name">全商汇商城</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="tabs_home">首页</string>
+    <string name="tabs_shopping_trolley">购物车</string>
+    <string name="tabs_orders">订单</string>
+    <string name="tabs_my">个人中心</string>
+    <string name="tv_register">注册</string>
+
+    <string name="phone_no">手机号</string>
+    <string name="password">密码</string>
+    <string name="verify_password">确认密码</string>
+    <string name="code">验证码</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--nim start-->
+    <string name="message_clear">清空本地消息记录</string>
+    <string name="message_history_query">云消息记录</string>
+
+    <!-- 多端在线类型 -->
+    <string name="on_line">在线</string>
+    <string name="on_line_pc">PC在线</string>
+    <string name="on_line_mac">Mac在线</string>
+    <string name="on_line_web">web在线</string>
+    <string name="client_aos">Android</string>
+    <string name="client_ios">iOS</string>
+    <string name="on_line_busy">忙碌</string>
+    <string name="off_line">离线</string>
+
+    <!-- 云信SDK所需文案 -->
+    <string name="nim_status_bar_multi_messages_incoming">%1$d位联系人有新消息</string>
+    <string name="nim_status_bar_ticker_text">%1$s有新消息</string>
+    <string name="nim_status_bar_image_message">%1$s发来一条图片消息</string>
+    <string name="nim_status_bar_audio_message">%1$s发来一条语音消息</string>
+    <string name="nim_status_bar_video_message">%1$s发来一条视频消息</string>
+    <string name="nim_status_bar_file_message">%1$s发来一条文件消息</string>
+    <string name="nim_status_bar_location_message">%1$s分享了一个地理位置</string>
+    <string name="nim_status_bar_notification_message">%1$s: 通知消息</string>
+    <string name="nim_status_bar_custom_message">%1$s: 自定义消息</string>
+    <string name="nim_status_bar_unsupported_message">%1$s: 无法显示该内容</string>
+    <string name="nim_status_bar_hidden_msg_content">你收到一条新消息</string>
+
+    <string name="readed">已读</string>
+    <string name="unread">未读</string>
+    <string name="about">关于</string>
+    <string name="logout">注销</string>
+    <string name="add">添加</string>
+    <string name="remove">移除</string>
+    <string name="menu">菜单</string>
+    <string name="verify_reminder">验证提醒</string>
+    <string name="without_content">暂无</string>
+    <string name="create">新建</string>
+    <string name="delete_tip">删除提示</string>
+    <string name="delete_system_message">删除该条系统消息？</string>
+    <string name="delete_success">删除成功</string>
+    <string name="clear_all_success">清空成功</string>
+    <string name="login_failed">帐号或密码错误</string>
+    <string name="login_exception">无效输入</string>
+    <string name="file_browser">文件浏览器</string>
+    <string name="upload_text">上传</string>
+    <string name="download_text">下载</string>
+    <string name="now_allow_space">不能含有空格</string>
+    <string name="open">开启</string>
+    <string name="close">关闭</string>
+    <string name="search_advanced_team">搜索高级群</string>
+    <string name="net_broken">当前网络不可用</string>
+    <string name="nim_status_unlogin">未登录</string>
+    <string name="nim_status_connecting">连接中...</string>
+    <string name="nim_status_logining">登录中...</string>
+    <string name="copyright">Copyright ©1997-2018 网易公司版权所有</string>
+    <string name="user_not_exsit">该用户不存在</string>
+    <string name="user_tips">请检查你输入的帐号是否正确</string>
+    <string name="edit">编辑</string>
+
+    <string name="multiport_manager">多端登录管理</string>
+    <string name="multiport_logout">下线</string>
+    <string name="computer_version">云信电脑版</string>
+    <string name="web_version">云信网页版</string>
+    <string name="mobile_version">云信移动版</string>
+    <string name="multiport_logging">正在使用</string>
+    <string name="kickout_notify">下线通知</string>
+    <string name="kickout_content">你的帐号被%1$s踢出下线，请确定帐号信息安全</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="account">账号</string>
+    <string name="forgetPassword">忘记密码？</string>
+    <string name="forgetPassword1">忘记密码</string>
+    <string name="invite_code">推荐码没有可不写</string>
+    <string name="next">下一步</string>
+    <string name="old_password">旧密码</string>
+
+
+    <string name="no_pwd">忘记密码?</string>
+    <string name="phone">手机号</string>
+    <string name="phone_code">验证码</string>
+    <string name="pwd">密码</string>
+    <string name="pwd_two">再次确认密码</string>
+    <string name="get_phone_code">获取验证码</string>
+    <string name="ok_send">确认提交</string>
+    <string name="plase_ok_phone">请输入正确的手机号</string>
+    <string name="pwd_two_no">两次密码输入不一致</string>
+    <string name="login_success">登录成功</string>
+    <string name="quxiao">取消</string>
+
+
+    <string name="tixian">提现</string>
+    <string name="zongjine">总金额</string>
+    <string name="news">消息</string>
+    <string name="my_video">我的视频</string>
+    <string name="my_challenge">发起挑战赛</string>
+    <string name="my_cooperation">合作申请</string>
+    <string name="my_Opinion">意见反馈</string>
+    <string name="shiming">实名认证</string>
+    <string name="shiming_text">欢迎成为喔点成员，请实名认证</string>
+    <string name="shiming_name">您的真实姓名</string>
+    <string name="shiming_id">身份证号</string>
+    <string name="shiming_tongyixieyi">同意喔点用户服务协议</string>
+    <string name="shiming_biaozhu">*请如实填写，以上信息将影响瓜分现金和提现，提交后不可修改</string>
+
+
+    <string name="huodong_shangjia">本期商家</string>
+    <string name="huodong_quanbushangjai">全部活动</string>
+
+
+    <string name="me">我的</string>
+
+
+    <string name="edit_photo">更换头像</string>
+
+
+    <string name="app_friend">站内好友</string>
+    <string name="wechat_friend">朋友圈</string>
+    <string name="wechat">微信</string>
+    <string name="QQ">QQ</string>
+    <string name="delet">删除</string>
+    <string name="edit_user_info">我的</string>
+    <string name="my_follow">我的关注</string>
+    <string name="my_fans">我的粉丝</string>
+    <string name="string_release_lolo">企业LOGO</string>
+    <string name="string_challenge_text">挑战赛内容(不超过20个字)</string>
+    <string name="string_challenge_money">设置广告金额（预计曝光率）</string>
+    <string name="string_challenge_time">开始时间-结束时间</string>
+    <string name="string_challenge_share">需要推广的APP、商城或产品广告语（选填）</string>
+    <string name="string_challenge_add_text">喔点官方平台审核通过后开始计时一周活动时间</string>
+    <string name="string_purse_balance">钱包余额</string>
+    <string name="string_amount_of_cash">提现金额</string>
+    <string name="string_money_icon">￥</string>
+    <string name="string_full_presentation">全部提现</string>
+    <string name="string_alipay_number">支付宝账号</string>
+    <string name="string_real_name">真实姓名</string>
+    <string name="string_login_pwd">登录密码</string>
+    <string name="string_payment_balance">支付余额</string>
+    <string name="string_balance_payment">余额支付</string>
+    <string name="string_wechat_payment">微信支付</string>
+    <string name="string_alipay_payment">支付宝支付</string>
+
+
+    <!--nim end-->
+
+</resources>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".ui.home.record.activity.RecordMusicActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical">
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+
+            <ImageView
+                android:id="@+id/ibtn_back"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/itbn_record_close" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/shape_record_music_search_bg"
+            android:ellipsize="end"
+            android:hint="要搜索的音乐名称"
+            android:maxLines="1"
+            android:paddingEnd="10dp"
+            android:paddingStart="30dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.game.jxj.view.StickyNavLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/id_stickynavlayout_topview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp">
+
+                    <TextView
+                        android:id="@+id/tv_xinge"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="11dp"
+                        android:drawableTop="@drawable/xinge"
+                        android:gravity="center"
+                        android:text="新歌"
+                        android:textColor="@color/white" />
+
+
+                    <TextView
+                        android:id="@+id/tv_jingdian"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="11dp"
+                        android:drawableTop="@drawable/xinge"
+                        android:gravity="center"
+                        android:text="经典"
+                        android:textColor="@color/white" />
+
+
+                    <TextView
+                        android:id="@+id/tv_chunyinyue"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="11dp"
+                        android:drawableTop="@drawable/chunyinyue"
+                        android:gravity="center"
+                        android:text="纯音乐"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_oumei"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="11dp"
+                        android:drawableTop="@drawable/oumei"
+                        android:gravity="center"
+                        android:text="欧美"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_dianyin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="11dp"
+                        android:drawableTop="@drawable/dianyin"
+                        android:gravity="center"
+                        android:text="电音"
+                        android:textColor="@color/white" />
+
+
+                    <TextView
+                        android:id="@+id/tv_liuxing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="11dp"
+                        android:drawableTop="@drawable/liuxing"
+                        android:gravity="center"
+                        android:text="流行"
+                        android:textColor="@color/white" />
+
+
+                    <TextView
+                        android:id="@+id/tv_gaoxiao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="11dp"
+                        android:drawableTop="@drawable/gaoxiao"
+                        android:gravity="center"
+                        android:text="搞笑"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/wu_dao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawablePadding="11dp"
+                        android:drawableTop="@drawable/wudao"
+                        android:gravity="center"
+                        android:text="舞蹈"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="18dp"
+                    android:background="#000619" />
+
+            </LinearLayout>
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:background="@color/colorPrimary" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.game.jxj.view.StickyNavLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:visibility="gone"
+            android:background="@color/colorPrimary"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp">
+
+            <FrameLayout
+                android:layout_width="47dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/iv_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                    android:id="@+id/progress"
+                    style="@style/Widget.MaterialProgressBar.ProgressBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+
+
+            </FrameLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_time_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_10" />
+
+                <TextView
+                    android:id="@+id/tv_time_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="1:20"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_10" />
+
+                <ImageView
+                    android:id="@+id/iv_sound_wave"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_time_length"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_user"
+                android:layout_width="53dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_music_user_button"
+                android:text="使用"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

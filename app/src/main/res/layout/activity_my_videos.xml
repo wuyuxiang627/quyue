@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.me.activity.MyVideosActivity">
+
+    <include layout="@layout/include_title_bar"/>
+
+    <!--<RadioGroup-->
+        <!--android:id="@+id/rg_type_name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginLeft="30dp"-->
+        <!--android:layout_marginRight="85dp"-->
+        <!--android:layout_marginTop="44dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rbtn_production"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:button="@null"-->
+            <!--android:text="作品（ 6 ）"-->
+            <!--android:textSize="@dimen/text_size_15" />-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rbtn_like"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:button="@null"-->
+            <!--android:text="喜欢（ 0 ）"-->
+            <!--android:textSize="@dimen/text_size_15" />-->
+
+        <!--<RadioButton-->
+            <!--android:id="@+id/rbtn_draft"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:button="@null"-->
+            <!--android:text="草稿（ 0 ）"-->
+            <!--android:textSize="@dimen/text_size_15" />-->
+
+    <!--</RadioGroup>-->
+
+    <net.lucode.hackware.magicindicator.MagicIndicator
+        android:id="@+id/magic_indicator7"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp" />
+
+    <com.gm.views.ForbidenScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

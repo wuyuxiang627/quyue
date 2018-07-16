@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_pt_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logozhijiao" />
+
+                <TextView
+                    android:id="@+id/tv_pt_company_name"
+                    android:layout_toRightOf="@+id/iv_pt_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:text=" @adidas 三叶草"
+                    android:textColor="#010B1E"/>
+
+                <TextView
+                    android:id="@+id/tv_pt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/tv_pt_company_name"
+                    android:text="2018春季新品，满1000返200  "
+                    android:textColor="#010b1e"
+                    android:textSize="13sp" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginLeft="35dp"
+                android:textSize="10sp"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="挑战奖金 （红色代表目前以奖励金额）"
+                android:textColor="@color/color_010B1E"
+                />
+            <LinearLayout
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="总金额"
+                    android:gravity="bottom"
+                    android:textColor="@color/color_010B1E"
+                    />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥100000 "
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="已奖励"
+                    android:gravity="bottom"
+                    android:textColor="@color/color_FF0001"
+                    />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-￥100000 "
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/color_FF0001"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="31dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我为阿迪代言，自由创意，寻找新品代言人"
+                android:textStyle="bold"
+                android:textColor="@color/color_010B1E"
+                android:textSize="13sp"/>
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:layout_marginTop="13dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icon_preview_heel"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

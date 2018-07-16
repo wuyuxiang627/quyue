@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.record.activity.VideoRecordActivity">
+
+
+    <com.tencent.rtmp.ui.TXCloudVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <FrameLayout
+        android:id="@+id/mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/record_mask_top" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/record_mask_buttom"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_top_function"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/ibtn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:onClick="onClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/itbn_record_close" />
+
+
+        <ImageView
+            android:id="@+id/iv_record_speed"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/iv_delay_record"
+            android:onClick="onClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/biansu" />
+
+
+        <ImageView
+            android:id="@+id/iv_delay_record"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/iv_flashlight"
+            android:onClick="onClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/yanchi" />
+
+        <ImageView
+            android:id="@+id/iv_flashlight"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toStartOf="@+id/iv_switch"
+            android:alpha="0.5"
+            android:onClick="onClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_flashlight" />
+
+        <ImageView
+            android:id="@+id/iv_switch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="20dp"
+            android:onClick="onClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_switch_camera" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_record_layout"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true">
+
+        <RadioGroup
+            android:id="@+id/rg_record_speed"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="35dp"
+            android:layout_marginStart="35dp"
+            android:background="@drawable/shape_record_speed_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <RadioButton
+                android:id="@+id/rb_slowest"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_record_speed_slow_corners_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="极慢"
+                android:textColor="@color/record_speed_selector"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rb_slow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_record_speed_item_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="慢"
+                android:textColor="@color/record_speed_selector"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rb_normal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_record_speed_item_bg"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+
+
+                android:text="标准"
+                android:textColor="@color/record_speed_selector"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rb_fast"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_record_speed_item_bg"
+                android:button="@null"
+                android:gravity="center"
+
+                android:text="快"
+                android:textColor="@color/record_speed_selector"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rb_fastest"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_record_speed_fast_corners_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:text="极快"
+                android:textColor="@color/record_speed_selector"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rg_record_speed"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/rg_record_speed"
+            android:layout_marginBottom="20dp">
+
+
+            <LinearLayout
+                android:id="@+id/layout_beauty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn_beauty"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:onClick="onClick"
+                    android:padding="6dp"
+                    android:src="@drawable/meiyan" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_music"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn_music"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:onClick="onClick"
+                    android:padding="6dp"
+                    android:src="@drawable/yinyue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:onClick="onClick"
+                    android:padding="6dp"
+                    android:src="@drawable/paisheanniu" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_local"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:onClick="onClick"
+                    android:padding="6dp"
+                    android:src="@drawable/bendi" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:onClick="onClick"
+                    android:padding="6dp"
+                    android:src="@drawable/bendi" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_alignBottom="@id/view_placeholder"
+            android:layout_alignTop="@+id/view_placeholder"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="15dp"
+            android:layout_toStartOf="@+id/view_placeholder"
+            android:onClick="onClick"
+            android:src="@drawable/shanchushipin"
+            android:visibility="invisible" />
+
+
+        <ImageView
+            android:id="@+id/iv_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_alignBottom="@id/view_placeholder"
+            android:layout_alignTop="@+id/view_placeholder"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/view_placeholder"
+            android:onClick="onClick"
+            android:src="@drawable/yulan"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/view_placeholder"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:visibility="invisible" />
+
+
+        <com.game.jxj.view.RippleBackground
+            android:id="@+id/content"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:rb_color="#C9435A"
+            app:rb_duration="3000"
+            app:rb_radius="10dp"
+            app:rb_rippleAmount="3"
+            app:rb_scale="4">
+
+            <ImageView
+                android:id="@+id/centerImage"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerInParent="true"
+                android:onClick="onClick"
+                android:src="@drawable/dianxialuzhi" />
+        </com.game.jxj.view.RippleBackground>
+
+        <TextView
+            android:id="@+id/tv_record_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/content"
+            android:layout_alignStart="@id/view_placeholder"
+            android:layout_below="@+id/view_placeholder"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:text="0.0s"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+    <com.game.jxj.widget.BeautySettingPannel
+        android:id="@+id/setting_pannel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+
+    <com.game.jxj.view.RecordProgressView
+        android:id="@+id/record_progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp" />
+
+
+</RelativeLayout>

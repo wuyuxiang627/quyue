@@ -1,0 +1,156 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+//        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        targetSdkVersion 22
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        android.compileOptions.sourceCompatibility 1.8
+        android.compileOptions.targetCompatibility 1.8
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
+
+        ndk {
+
+            abiFilters "armeabi", "armeabi-v7a"
+        }
+
+    }
+
+
+    signingConfigs {
+        release {
+            storeFile file("shopping.jks")
+            storePassword "070809"
+            keyAlias "shopping"
+            keyPassword "070809"
+            v2SigningEnabled false
+        }
+    }
+
+//    buildTypes {
+//        debug {
+//            signingConfig signingConfigs.release
+//        }
+//        release {
+//            debuggable = true
+//            signingConfig signingConfigs.release
+//        }
+//    }
+//
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable = true
+            signingConfig signingConfigs.release
+        }
+//        debug {
+//            signingConfig signingConfigs.release
+//        }
+    }
+
+
+}
+
+
+MobSDK {
+    appKey "2636900b5e6d0"
+    appSecret "351a8043c40790cc65e6fb93ad416106"
+//    appKey "268822392c38f"
+//    appSecret "703077776e4a473a76d8ebb9450826a8"
+
+    ShareSDK {
+        //平台配置信息
+        devInfo {
+
+            Wechat {
+                appId "wxc617ee9f42f115ec"
+                appSecret "8507f27920a3ffe689f16e1c04b6d3d2"
+            }
+
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation project(':net')
+    implementation project(':LibUI')
+    implementation project(':magicindicator')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    testImplementation 'junit:junit:4.12'
+    implementation rootProject.ext.dependencies["appcompat-v7"]
+    implementation rootProject.ext.dependencies["dagger2"]
+    annotationProcessor rootProject.ext.dependencies["dagger-compiler"]
+    implementation rootProject.ext.dependencies["design"]
+    implementation rootProject.ext.dependencies["rxjava2"]
+    implementation rootProject.ext.dependencies["rxandroid"]
+    implementation rootProject.ext.dependencies["rxpermissions2"]
+    implementation rootProject.ext.dependencies["bottom"]
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+    implementation 'com.youth.banner:banner:1.4.10'
+    //稳定版
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.3'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'
+    //没有使用特殊Header，可以不加这行
+    implementation 'com.gongwen:marqueelibrary:1.1.3'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.31'
+    implementation 'me.zhanghai.android.materialratingbar:library:1.0.2'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation 'com.contrarywind:Android-PickerView:4.1.3'
+    implementation('com.github.LuckSiege.PictureSelector:picture_library:v2.0.4') {
+        exclude module: 'glide'
+    }
+    implementation 'com.github.gittjy:LoadingDialog:1.0.2'
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+    implementation 'com.github.mmin18:realtimeblurview:1.1.2'
+    implementation 'me.everything:overscroll-decor-android:1.0.4'
+    //    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'jp.wasabeef:glide-transformations:3.3.0'
+    //腾讯
+    implementation(name: 'LiteAVSDK_Professional_4.9.4663', ext: 'aar')
+    //    implementation(name: 'liteimsdk-release', ext: 'aar')
+    implementation 'com.github.castorflex.verticalviewpager:library:19.0.1'
+    implementation 'com.github.hackware1993:MagicIndicator:1.5.0'
+    implementation 'com.airbnb.android:lottie:2.5.4'
+    implementation 'com.github.jd-alexander:LikeButton:0.2.3'
+    //图片选择库
+    implementation 'com.lzy.widget:imagepicker:0.6.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //底部滚筒选择
+    implementation('cn.qqtheme.framework:WheelPicker:latest.release') {
+        exclude group: 'com.android.support'
+    }
+    implementation 'com.alibaba:fastjson:1.1.55.android'
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.4.2'
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    //地址选择器
+    implementation 'com.github.ywp0919:AddressPickerLib:1.0.1'
+    implementation files('libs/xutils-3.3.2.jar')
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'com.liulishuo.filedownloader:library:1.7.4'
+
+    implementation(name: 'ZMCert_SDK', ext: 'aar')
+}

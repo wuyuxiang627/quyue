@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+
+    <RelativeLayout
+        android:paddingEnd="18dp"
+        android:paddingStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text=" @adidas 三叶草"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_666666"
+            android:textSize="11sp"
+            android:text="距结束还剩 3 天"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:paddingEnd="18dp"
+        android:paddingStart="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_item_challenge_company_logo"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/logozhijiao"
+            android:layout_marginTop="19dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_item_challenge_company_logo"
+            android:layout_toLeftOf="@+id/tv_item_challenge_money"
+            android:layout_centerVertical="true"
+            android:text="我为阿迪代言，自由创意，为品牌寻找新品代言人"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_challenge_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥1000000"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="22dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_item_challenge_no_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_item_challenge_money"
+            android:text="-560000"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"/>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/view_back"/>
+
+
+
+
+</LinearLayout>

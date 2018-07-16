@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 程序中用到的字体大小 -->
+
+    <dimen name="text_size_very_large">22sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_normal">15sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_very_small">11sp</dimen>
+
+    <!-- 全局通用的margin -->
+    <dimen name="global_common_margin">7dp</dimen>
+
+
+    <!-- 界面中导航栏高度 -->
+    <dimen name="title_bar_height">48dp</dimen>
+    <!-- tab 高度 -->
+    <dimen name="activity_tab_height">48dp</dimen>
+    <dimen name="activity_tab_weight">54dp</dimen>
+
+
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:background="@drawable/back_share_solid"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/ll_pop"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icon_share_news"
+                android:button="@null"
+                android:text="@string/app_friend"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:drawablePadding="4dp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icon_share_friend"
+                android:button="@null"
+                android:text="@string/wechat_friend"
+                android:textColor="@color/white"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:drawablePadding="4dp"
+                android:textSize="17sp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icon_share_weixin"
+                android:button="@null"
+                android:text="@string/wechat"
+                android:textColor="@color/white"
+                android:layout_marginRight="25dp"
+                android:gravity="center"
+                android:drawablePadding="4dp"
+                android:textSize="17sp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icon_share_qq"
+                android:gravity="center"
+                android:drawablePadding="4dp"
+                android:button="@null"
+                android:text="@string/QQ"
+                android:layout_marginRight="25dp"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/icon_share_del"
+                android:gravity="center"
+                android:drawablePadding="4dp"
+                android:button="@null"
+                android:text="@string/delet"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_pop_finish"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="#0dFFFFFF"
+            android:text="@string/quxiao"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="33dp"
+            app:layout_constraintTop_toBottomOf="@+id/ll_pop"/>
+
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
